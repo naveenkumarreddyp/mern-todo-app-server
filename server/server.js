@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors({
     origin: ["http://localhost:3000/", "https://todo-app-api-hemx.onrender.com"]
 }))
-// app.use(cors())
+app.use(cors())
 app.use(todoRoutes)
 // Routes
 app.get('/', (req, res) => {
